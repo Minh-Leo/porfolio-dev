@@ -31,6 +31,10 @@ const theme = createMuiTheme({
       // height: "350px",
       // overflow: "hidden"
       // backgroundColor: "black"
+    },
+    button: {
+      fontFamily: "Dosis",
+      fontWeight: "bold"
     }
   }
 });

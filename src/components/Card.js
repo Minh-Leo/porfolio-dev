@@ -15,8 +15,10 @@ const styles = makeStyles({
     height: 330,
     backgroundColor: "#FFFFFF",
     color: "#393939",
-    border: "1px solid #393939"
+    border: "1px solid #39393970",
+    transition: "ease 12s"
   },
+
   media: {
     height: 200
     // margin: 5
@@ -24,38 +26,50 @@ const styles = makeStyles({
   content: {
     paddingTop: "5px",
     paddingBottom: "0px"
+  },
+  button: {
+    fontFamily: "Dosis",
+    fontWeight: "bold"
   }
 });
 
 const CardPorfo = props => {
   const classes = styles();
+  const {image, title, body, url} = props;
+
+  const onClick = () => {
+    window.open(url);
+  };
 
   return (
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={props.image}
-          title={props.title}
-        />
-        <CardContent className={classes.content}>
-          <Typography gutterBottom variant='h6' color='inherit' component='h2'>
-            {props.title}
-          </Typography>
-          <Typography variant='caption' color='inherit' component='p'>
-            {props.body}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size='small' color='secondary'>
-          Go to Site
-        </Button>
-        <Button size='small' color='primary'>
-          View Source Code
-        </Button>
-      </CardActions>
-    </Card>
+    <div className={classes.hover}>
+      <Card className={classes.card}>
+        <CardActionArea onClick={onClick}>
+          <CardMedia className={classes.media} image={image} title={title} />
+          <CardContent className={classes.content}>
+            <Typography
+              gutterBottom
+              variant='h6'
+              color='inherit'
+              component='h2'
+            >
+              {title}
+            </Typography>
+            <Typography variant='caption' color='inherit' component='p'>
+              {body}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size='small' color='secondary' onClick={onClick}>
+            Go to Site
+          </Button>
+          <Button className={classes.button} size='small' color='primary'>
+            View Source Code
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
   );
 };
 

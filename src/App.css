@@ -1,5 +1,5 @@
 * {
-  font-family: Roboto;
+  /* font-family: Roboto; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,30 +18,30 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  background-color: #393939;
-  padding: 7px;
+  background-color: #fff;
+  padding: 3px 3px 15px 3px;
 }
 
 .image {
-  width: 80px;
-  float: left;
+  height: 60px;
+  padding: 0px;
 }
 
 .nav-links {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .nav-links a {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
   text-decoration: none;
-  color: #ffffff;
+  color: #393939;
   margin: 0 30px 0 0px;
 }
 .nav-links a:hover {
-  color: gray;
+  color: #f52f57;
 }
 
 .img {
   width: 100%;
-  /* background-size: contain; */
-  /* background-image: url("./images/porfoweb2.png"); */
 }

@@ -15,7 +15,7 @@ const styles = makeStyles({
     height: 330,
     backgroundColor: "#FFFFFF",
     color: "#393939",
-    border: "1px solid #393939"
+    border: "1px solid #39393970"
   },
   media: {
     height: 200
@@ -25,34 +25,50 @@ const styles = makeStyles({
   content: {
     paddingTop: "5px",
     paddingBottom: "0px"
+  },
+  button: {
+    fontFamily: "Dosis",
+    fontWeight: "bold"
+  },
+  btnCardLong: {
+    display: "flex",
+    // marginLeft: "50px"
+    justifyContent: "space-between"
   }
 });
 
 const CardPorfoLong = props => {
   const classes = styles();
+  const {image, title, body, url} = props;
+
+  const onClick = () => {
+    window.open(url);
+  };
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image={props.image}
-          title={props.title}
-        />
+      <CardActionArea onClick={onClick}>
+        <CardMedia className={classes.media} image={image} title={title} />
         <CardContent className={classes.content}>
-          <Typography gutterBottom variant='h6' color='inherit' component='h2'>
-            {props.title}
+          <Typography
+            gutterBottom
+            className={classes.btnCardLong}
+            variant='h6'
+            color='inherit'
+            component='h2'
+          >
+            <span>{title}</span>
           </Typography>
           <Typography variant='caption' color='inherit' component='p'>
-            {props.body}
+            {body}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size='small' color='secondary'>
+        <Button size='small' color='secondary' onClick={onClick}>
           Go to Site
         </Button>
-        <Button size='small' color='primary'>
+        <Button className={classes.button} size='small' color='primary'>
           View Source Code
         </Button>
       </CardActions>
