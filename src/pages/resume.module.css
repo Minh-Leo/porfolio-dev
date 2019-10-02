@@ -1,0 +1,103 @@
+.clear {
+  clear: both;
+}
+.pageWrap {
+  font: 14px Helvetica, Sans-Serif;
+  line-height: 24px;
+  background: url("../images/noise.jpg");
+  width: 800px;
+  margin: 40px auto 60px;
+  padding: 40px 20px 20px 20px;
+  border: 1px dashed #39393970;
+  -webkit-box-shadow: 0px 2px 3px 0px #39393930;
+  -moz-box-shadow: 0px 2px 3px 0px #39393930;
+  box-shadow: 0px 2px 3px 0px #39393930;
+}
+.pic {
+  float: right;
+  margin: -20px 20px 0 0;
+  border: 1px dashed #39393950;
+  transform: rotate(-2deg);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px #39393970;
+}
+.pageWrap h1 {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #999;
+}
+.pageWrap h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  position: relative;
+}
+.pageWrap h2 span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-family: Georgia, Serif;
+  font-size: 16px;
+  color: #999;
+  font-weight: normal;
+}
+.pageWrap p {
+  margin: 0 0 16px 0;
+}
+.email {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+.email:hover {
+  border-bottom-style: solid;
+  color: black;
+}
+.pageWrap ul {
+  margin: 0 0 16px 16px;
+}
+.objective {
+  width: 500px;
+  float: left;
+}
+.objective p {
+  font-family: Georgia, Serif;
+  font-style: italic;
+  color: #666;
+}
+dt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  padding: 0 20px 0 0;
+  width: 120px;
+  float: left;
+  height: 100px;
+  border-right: 1px solid #999;
+}
+dd {
+  width: 600px;
+  float: right;
+}
+dd.clear {
+  float: none;
+  margin: 0;
+  height: 15px;
+}
+.edu {
+  height: 190px;
+}
+.skill {
+  height: 190px;
+}
+.exp {
+  height: 190px;
+}
+.hobbies {
+  height: 30px;
+}

@@ -18,19 +18,24 @@ const theme = createMuiTheme({
     textSecondary: "#393939"
   },
   spreadIt: {
-    status: {},
-    home: {
+    // title: {
+    //   float: "right",
+    //   margin: "10px 10px 10px 30px"
+    // },
+    containerPage: {
       flexGrow: 1,
-      margin: "20px 10px 10px 10px",
+      margin: "30px 10px 10px 10px",
       maxWidth: "1280px"
       // backgroundColor: "aqua"
     },
     paper: {
-      // padding: 0,
-      // textAlign: "center",
-      // height: "350px",
-      // overflow: "hidden"
-      // backgroundColor: "black"
+      padding: 0,
+      textAlign: "center",
+      height: "350px",
+      overflow: "hidden",
+      backgroundColor: "white",
+      fontFamily: "Dosis, san-serif"
+      // fontStyle: "italic"
     },
     button: {
       fontFamily: "Dosis",

@@ -1,0 +1,59 @@
+.clear {
+  clear: both;
+}
+.pageWrap {
+  font: 14px Helvetica, Sans-Serif;
+  line-height: 24px;
+  background: url("../images/noise.jpg");
+  width: 800px;
+  height: 200px;
+  margin: 40px auto 60px;
+  padding: 40px 20px 20px 20px;
+  border: 1px dashed #39393970;
+  border: 1px dashed #39393950;
+  -webkit-box-shadow: 0px 2px 3px 0px #39393930;
+  -moz-box-shadow: 0px 2px 3px 0px #39393930;
+  box-shadow: 0px 2px 3px 0px #39393930;
+}
+.pic {
+  width: 150px;
+  float: right;
+  margin: 0px 0 0 0;
+}
+.pageWrap h1 {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #999;
+}
+.pageWrap h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  position: relative;
+}
+.pageWrap p {
+  margin: 0 0 16px 0;
+}
+.email {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+.email:hover {
+  border-bottom-style: solid;
+  color: black;
+}
+.pageWrap ul {
+  margin: 0 0 32px 17px;
+}
+.objective {
+  max-width: 700px;
+  float: left;
+}
+.objective p {
+  font-family: Georgia, Serif;
+  font-style: italic;
+  color: #666;
+}

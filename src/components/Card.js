@@ -35,36 +35,46 @@ const styles = makeStyles({
 
 const CardPorfo = props => {
   const classes = styles();
-  const {image, title, body, url} = props;
+  const {image, title, body, url, git} = props;
 
-  const onClick = () => {
-    window.open(url);
+  const onClick = link => {
+    window.open(link);
   };
 
   return (
     <div className={classes.hover}>
       <Card className={classes.card}>
-        <CardActionArea onClick={onClick}>
+        <CardActionArea onClick={() => onClick(url)}>
           <CardMedia className={classes.media} image={image} title={title} />
           <CardContent className={classes.content}>
-            <Typography
-              gutterBottom
-              variant='h6'
-              color='inherit'
-              component='h2'
-            >
+            <Typography variant='h6' color='inherit' component='h2'>
               {title}
             </Typography>
-            <Typography variant='caption' color='inherit' component='p'>
+            <Typography
+              gutterBottom
+              variant='caption'
+              color='inherit'
+              component='p'
+            >
               {body}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size='small' color='secondary' onClick={onClick}>
+          <Button
+            className={classes.button}
+            size='small'
+            color='secondary'
+            onClick={() => onClick(url)}
+          >
             Go to Site
           </Button>
-          <Button className={classes.button} size='small' color='primary'>
+          <Button
+            className={classes.button}
+            size='small'
+            color='primary'
+            onClick={() => onClick(git)}
+          >
             View Source Code
           </Button>
         </CardActions>
