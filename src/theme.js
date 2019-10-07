@@ -28,18 +28,41 @@ const theme = createMuiTheme({
       maxWidth: "1280px"
       // backgroundColor: "aqua"
     },
+
     paper: {
-      padding: 0,
+      padding: "10px",
+      margin: "auto",
       textAlign: "center",
       height: "350px",
+      width: "700px",
       overflow: "hidden",
       backgroundColor: "white",
-      fontFamily: "Dosis, san-serif"
-      // fontStyle: "italic"
+      fontFamily: "Dosis, san-serif",
+      display: "flex",
+      flexWrap: "wrap",
+      flexDirection: "column",
+      justifyContent: "center",
+      border: "1px dashed #39393970",
+      boxShadow: "0px 2px 3px 0px #39393930"
+    },
+    descript: {
+      textAlign: "center",
+      margin: "40px 30px 10px 30px"
+    },
+    image: {
+      width: "300px",
+      borderRadius: "50%",
+      margin: "40px 20px 40px 20px"
     },
     button: {
       fontFamily: "Dosis",
       fontWeight: "bold"
+    },
+    appIcon: {
+      margin: "auto",
+      "&:hover": {
+        color: "#393939"
+      }
     }
   }
 });

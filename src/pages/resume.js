@@ -7,9 +7,9 @@ function Resume() {
     <div className={styles.pageWrap}>
       <img src={Img} alt='profile' className={styles.pic} />
       <div>
-        <h1>Mr. Minh Bui</h1>
+        <h1>. Minh Bui .</h1>
         <p>
-          Mobile: <span>04-9039-7335</span>
+          Mobile: <span>0490-397-335</span>
           <br />
           Email:{" "}
           <a className={styles.email} href='mailto:tranduyminh.bui@gmail.com'>
@@ -62,7 +62,7 @@ function Resume() {
           <ul>
             <li>M.E.R.N stack: MongoDB - ExpressJS - ReactJS - NodeJS</li>
             <li>HTML 5, CSS 3, SASS, Javascript, Bootstrap, JQuery</li>
-            <li>Git, Firebase, AuthO, Netlify, Heroku, Material-UI</li>
+            <li>Git, Redux, Firebase, AuthO, Netlify, Heroku, Material-UI</li>
           </ul>
         </dd>
         <dd>
@@ -71,7 +71,7 @@ function Resume() {
             <li>
               Adobe Suite: Photoshop, Lightroom, Premiere Pro, Illustrator
             </li>
-            <li>Video & Photography skills</li>
+            <li>Videography & Photography skills</li>
           </ul>
         </dd>
 
@@ -80,23 +80,27 @@ function Resume() {
         <dt className={styles.exp}>Experience</dt>
         <dd>
           <h2>
-            Freelance <span>Leader/Overlord - Baton Rogue, LA - 1926-2010</span>
+            Freelance{" "}
+            <span>Minh Bui Studio - Sydney/Dubbo/Adelaide - 2014-2019</span>
           </h2>
           <ul>
             <li>
-              Inspired and won highest peasant death competition among servants
+              In charge of producing weekly photos and videos of various events
+              from local companies, night clubs and media agencies
             </li>
-            <li>Helped coordinate managers to grow cult following</li>
-            <li>Provided untimely deaths to all who opposed</li>
+            <li>
+              Develop static websites as well as many side projects on ReactJS
+            </li>
+            <li>Design food & drink menu for coffee shop</li>
           </ul>
 
           <h2>
-            The Watering Hole{" "}
-            <span>Bartender/Server - Milwaukee, WI - 2009</span>
+            TEDx University of South Australia{" "}
+            <span>Team member - Adelaide - 2019</span>
           </h2>
           <ul>
-            <li>Worked on grass-roots promotional campaigns</li>
-            <li>Reduced theft and property damage percentages</li>
+            <li>Worked on promotional campaigns</li>
+            <li>Produced main events photos of speakers and guests</li>
           </ul>
         </dd>
 
@@ -104,7 +108,10 @@ function Resume() {
 
         <dt className={styles.hobbies}>Hobbies</dt>
         <dd>
-          Travelling, Oldie Musics, Photography, Coding, New Technologies{" "}
+          <ul>
+            <li>Travelling, Musics: mostly Jazz, Ballad & Swing</li>
+            <li>Street Photography, Coding, New Technologies</li>
+          </ul>{" "}
         </dd>
 
         <dd className={styles.clear}></dd>

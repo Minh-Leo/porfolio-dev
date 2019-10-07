@@ -1,14 +1,16 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import profile2 from "../images/profile2.jpg";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import CameraIcon from "@material-ui/icons/Camera";
 import AppsIcon from "@material-ui/icons/Apps";
 
 const styles = theme => ({
@@ -20,29 +22,85 @@ function Home(props) {
 
   return (
     <div className={classes.containerPage}>
-      <Grid container spacing={2}>
+      <Grid container>
         <Grid item md>
-          <Paper className={classes.paper}>
-            'm a Australia based front‑end developer & photographer focused on
-            crafting clean & user‑friendly experiences. Below you can see some
-            projects I've been working on lately. I divide each project into
-            four follow-up areas: comprehensive research, wireframing, design &
-            development. This process allows me to create great product with
-            client goals in mind.
-            <FacebookIcon color='primary' fontSize='large' />
-            <InstagramIcon color='primary' fontSize='large' />
-            <EmailIcon color='primary' fontSize='large' />
-            <PhoneAndroidIcon color='primary' fontSize='large' />
-            <AppsIcon color='primary' fontSize='large' />
-          </Paper>{" "}
+          <div className='profileContainer'>
+            <img
+              className={classes.image}
+              src={profile2}
+              alt='profile Minh Bui'
+            />
+            <ul>
+              <li>
+                <FacebookIcon color='primary' fontSize='default' />
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.facebook.com/Nekoroden'
+                >
+                  https://www.facebook.com/Nekoroden
+                </a>
+              </li>
+              {/* <li>
+                <InstagramIcon color='primary' fontSize='default' />
+                <a target='_blank' href='https://www.instagram.com/nekoroden/'>
+                  https://www.instagram.com/nekoroden
+                </a>
+              </li> */}
+              <li>
+                <EmailIcon color='primary' fontSize='default' />
+                <a>tranduyminh.bui@gmail.com</a>
+              </li>
+
+              <li>
+                <CameraIcon color='primary' fontSize='default' />
+                <a
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://tranduyminhbui.wixsite.com/porfolio'
+                >
+                  https://tranduyminhbui.wixsite.com/porfolio
+                </a>
+              </li>
+              <li>
+                <PhoneAndroidIcon color='primary' fontSize='default' />{" "}
+                <a>0490 - 397 - 335</a>
+              </li>
+              {/* <li>
+                <p>https://tranduyminhbui.wixsite.com/porfolio/about-me</p>
+              </li> */}
+            </ul>
+          </div>{" "}
         </Grid>
-        <Grid item md={8}>
-          <Paper className={classes.paper}>
-            ABOUT ME I'm web designer & front-end developer with 7 years of
-            professional experience. I'm interested in all kinds of visual
-            communication, but my major focus is on designing web, mobile &
-            tablet interfaces. I also have skills in other fields like branding,
-            icon design or web development.
+      </Grid>
+
+      <Grid container>
+        <Grid item md>
+          <Paper className={`${classes.paper}`}>
+            <h1>Hello, I'm Minh Bui.</h1>
+
+            {/* <h1>Front-end Web Developer</h1> */}
+            <p className={classes.descript}>
+              I'm an Australia based front‑end developer & photographer focused
+              on crafting clean & user‑friendly experiences. On the next page
+              you can see some projects I've been working on lately, they are
+              mainly built with HTML - CSS - Javascript - ReactJS with Redux and
+              Context API on the Front-end, then MongooseDB, Firebase, ExpressJS
+              and NodeJS on the Back-end.
+              <br />
+              <br /> I'm interested in all kinds of visual communication, but my
+              major focus is on designing and developing web, mobile & tablet
+              interfaces. I also have skills in other fields such as photography
+              and videography. So let's get in touch and talk more about your
+              next web project!
+            </p>
+            <Link to='/projects'>
+              <AppsIcon
+                className={classes.appIcon}
+                color='primary'
+                fontSize='large'
+              />{" "}
+            </Link>
           </Paper>{" "}
         </Grid>
       </Grid>

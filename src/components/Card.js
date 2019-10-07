@@ -15,7 +15,7 @@ const styles = makeStyles({
     height: 330,
     backgroundColor: "#FFFFFF",
     color: "#393939",
-    border: "1px solid #39393970",
+    border: "1px dashed #39393990",
     transition: "ease 12s"
   },
 

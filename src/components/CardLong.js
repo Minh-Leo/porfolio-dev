@@ -15,7 +15,7 @@ const styles = makeStyles({
     height: 330,
     backgroundColor: "#FFFFFF",
     color: "#393939",
-    border: "1px solid #A2002170"
+    border: "1px dashed #A2002190"
   },
   media: {
     height: 200

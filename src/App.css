@@ -28,7 +28,7 @@ nav {
 }
 
 .current {
-  border-bottom: 1px solid #f52f57;
+  border-bottom: 1px dotted #f52f57;
 }
 .nav-links {
   display: flex;
@@ -48,4 +48,27 @@ nav {
 
 .img {
   width: 100%;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.profileContainer ul li {
+  list-style: none;
+  margin: 5px;
+  line-height: 2;
+  position: relative;
+}
+.profileContainer a {
+  text-decoration: none;
+  color: #393939;
+  margin-left: 5px;
+  position: relative;
+  top: -5px;
+}
+.profileContainer h3 {
+  flex-basis: 1;
 }

@@ -122,7 +122,7 @@ class Projects extends Component {
                 <CardPorfoLong
                   image={react4}
                   title='Social Ape'
-                  body='Whole every miles as tiled at seven or. Wished he entire esteem mr oh by. Possible bed you pleasure civility boy elegance ham. He prevent request by if in pleased. Picture too and concern has was comfort.  '
+                  body='An attempt of cloning Twitter, with features including signup for new users by email - login for existed users - post/delete/comment/like/unlike messages - receive notifications on recent activities '
                   url='https://social-ape-0007.netlify.com/'
                   git='https://github.com/Minh-Leo/social-ape'
                 />
@@ -131,7 +131,7 @@ class Projects extends Component {
                 <CardPorfo
                   image={react1}
                   title='React Movie Database'
-                  body='resembled eagerness nor. Same park bore on be. Warmth his law design say are person person person . '
+                  body='Web app using MovieDatabase API to search for movies and display relevant informations '
                   url='https://react-movie-search-0001.netlify.com/'
                   git='https://github.com/Minh-Leo/movie-app'
                 />
@@ -142,7 +142,7 @@ class Projects extends Component {
                 <CardPorfo
                   image={react2}
                   title='Hotel Rooms Booking app'
-                  body='resembled eagerness nor. Same park bore on be. Warmth his law design say are person.'
+                  body='Web app for displaying - sorting - filtering room in a hotel based on various criteria'
                   url='https://react-beach-resort-0003.netlify.com/'
                   git='https://github.com/Minh-Leo/react-beachResort'
                 />
@@ -151,7 +151,7 @@ class Projects extends Component {
                 <CardPorfo
                   image={react3}
                   title='Mobile Phone e-Commerce'
-                  body='resembled eagerness nor. Same park bore on be. Warmth his law design say are person.'
+                  body='Web app with shopping cart feature, is linked with paypal sandbox to simulate real transactions'
                   url='https://react-phone-ecommerce-0004.netlify.com/'
                   git='https://github.com/Minh-Leo/react-phone-store'
                 />
@@ -160,7 +160,7 @@ class Projects extends Component {
                 <CardPorfo
                   image={react5}
                   title='Github User Data Finder'
-                  body='resembled eagerness nor. Same park bore on be. Warmth his law design say are person.'
+                  body='Web app for searching and displaying information on github users and their repositories'
                   url='https://githubfinder-0002.netlify.com/'
                   git='https://github.com/Minh-Leo/github-search'
                 />
