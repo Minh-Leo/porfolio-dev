@@ -89,9 +89,9 @@ function Resume() {
               from local companies, night clubs and media agencies
             </li>
             <li>
-              Develop static websites as well as many side projects on ReactJS
+              Developed static websites as well as many side projects on ReactJS
             </li>
-            <li>Design food & drink menu for coffee shop</li>
+            <li>Designed food & drink menu for coffee shop</li>
           </ul>
 
           <h2>
@@ -109,7 +109,7 @@ function Resume() {
         <dt className={styles.hobbies}>Hobbies</dt>
         <dd>
           <ul>
-            <li>Travelling, Musics: mostly Jazz, Ballad & Swing</li>
+            <li>Travelling, Musics: Jazz, Ballad & Swing, Piano</li>
             <li>Street Photography, Coding, New Technologies</li>
           </ul>{" "}
         </dd>

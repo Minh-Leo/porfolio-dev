@@ -64,6 +64,8 @@ nav {
 }
 .profileContainer a {
   text-decoration: none;
+  font-family: Georgia, Serif;
+  font-size: 14px;
   color: #393939;
   margin-left: 5px;
   position: relative;

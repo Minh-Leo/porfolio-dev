@@ -41,12 +41,6 @@ function Home(props) {
                   https://www.facebook.com/Nekoroden
                 </a>
               </li>
-              {/* <li>
-                <InstagramIcon color='primary' fontSize='default' />
-                <a target='_blank' href='https://www.instagram.com/nekoroden/'>
-                  https://www.instagram.com/nekoroden
-                </a>
-              </li> */}
               <li>
                 <EmailIcon color='primary' fontSize='default' />
                 <a>tranduyminh.bui@gmail.com</a>
@@ -66,9 +60,6 @@ function Home(props) {
                 <PhoneAndroidIcon color='primary' fontSize='default' />{" "}
                 <a>0490 - 397 - 335</a>
               </li>
-              {/* <li>
-                <p>https://tranduyminhbui.wixsite.com/porfolio/about-me</p>
-              </li> */}
             </ul>
           </div>{" "}
         </Grid>
