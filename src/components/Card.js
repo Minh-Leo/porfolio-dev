@@ -1,4 +1,6 @@
 import React from "react";
+import {Spring} from "react-spring/renderprops";
+
 import {makeStyles} from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -35,51 +37,63 @@ const styles = makeStyles({
 
 const CardPorfo = props => {
   const classes = styles();
-  const {image, title, body, url, git} = props;
+  const {image, title, body, url, git, sec} = props;
 
   const onClick = link => {
     window.open(link);
   };
 
   return (
-    <div className={classes.hover}>
-      <Card className={classes.card}>
-        <CardActionArea onClick={() => onClick(url)}>
-          <CardMedia className={classes.media} image={image} title={title} />
-          <CardContent className={classes.content}>
-            <Typography variant='h6' color='inherit' component='h2'>
-              {title}
-            </Typography>
-            <Typography
-              gutterBottom
-              variant='caption'
-              color='inherit'
-              component='p'
-            >
-              {body}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button
-            className={classes.button}
-            size='small'
-            color='secondary'
-            onClick={() => onClick(url)}
-          >
-            Go to Site
-          </Button>
-          <Button
-            className={classes.button}
-            size='small'
-            color='primary'
-            onClick={() => onClick(git)}
-          >
-            View Source Code
-          </Button>
-        </CardActions>
-      </Card>
-    </div>
+    <Spring
+      from={{opacity: 0, marginTop: 100}}
+      to={{opacity: 1, marginTop: 0}}
+      config={{delay: sec}}
+    >
+      {props => (
+        <div className={classes.hover} style={props}>
+          <Card className={classes.card}>
+            <CardActionArea onClick={() => onClick(url)}>
+              <CardMedia
+                className={classes.media}
+                image={image}
+                title={title}
+              />
+              <CardContent className={classes.content}>
+                <Typography variant='h6' color='inherit' component='h2'>
+                  {title}
+                </Typography>
+                <Typography
+                  gutterBottom
+                  variant='caption'
+                  color='inherit'
+                  component='p'
+                >
+                  {body}
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button
+                className={classes.button}
+                size='small'
+                color='secondary'
+                onClick={() => onClick(url)}
+              >
+                Go to Site
+              </Button>
+              <Button
+                className={classes.button}
+                size='small'
+                color='primary'
+                onClick={() => onClick(git)}
+              >
+                View Source Code
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+      )}
+    </Spring>
   );
 };
 

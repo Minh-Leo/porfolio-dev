@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import {Spring} from "react-spring/renderprops";
 import profile2 from "../images/profile2.jpg";
 
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -65,36 +66,44 @@ function Home(props) {
         </Grid>
       </Grid>
 
-      <Grid container>
-        <Grid item md>
-          <Paper className={`${classes.paper}`}>
-            <h1>Hello, I'm Minh Bui.</h1>
+      <Spring
+        from={{opacity: 0, marginTop: 50}}
+        to={{opacity: 1, marginTop: 0}}
+        config={{duration: 500}}
+      >
+        {props => (
+          <Grid container style={props}>
+            <Grid item md>
+              <Paper className={`${classes.paper}`}>
+                <h1>Hello, I'm Minh Bui.</h1>
 
-            {/* <h1>Front-end Web Developer</h1> */}
-            <p className={classes.descript}>
-              I'm an Australia based front‑end developer & photographer focused
-              on crafting clean & user‑friendly experiences. On the next page
-              you can see some projects I've been working on lately, they are
-              mainly built with HTML - CSS - Javascript - ReactJS with Redux and
-              Context API on the Front-end, then MongooseDB, Firebase, ExpressJS
-              and NodeJS on the Back-end.
-              <br />
-              <br /> I'm interested in all kinds of visual communication, but my
-              major focus is on designing and developing web, mobile & tablet
-              interfaces. I also have skills in other fields such as photography
-              and videography. So let's get in touch and talk more about your
-              next web project!
-            </p>
-            <Link to='/projects'>
-              <AppsIcon
-                className={classes.appIcon}
-                color='primary'
-                fontSize='large'
-              />{" "}
-            </Link>
-          </Paper>{" "}
-        </Grid>
-      </Grid>
+                {/* <h1>Front-end Web Developer</h1> */}
+                <p className={classes.descript}>
+                  I'm an Australia based front‑end developer & photographer
+                  focused on crafting clean & user‑friendly experiences. On the
+                  next page you can see some projects I've been working on
+                  lately, they are mainly built with HTML - CSS - Javascript -
+                  ReactJS with Redux and Context API on the Front-end, then
+                  MongooseDB, Firebase, ExpressJS and NodeJS on the Back-end.
+                  <br />
+                  <br /> I'm interested in all kinds of visual communication,
+                  but my major focus is on designing and developing web, mobile
+                  & tablet interfaces. I also have skills in other fields such
+                  as photography and videography. So let's get in touch and talk
+                  more about your next web project!
+                </p>
+                <Link to='/projects'>
+                  <AppsIcon
+                    className={classes.appIcon}
+                    color='primary'
+                    fontSize='large'
+                  />{" "}
+                </Link>
+              </Paper>{" "}
+            </Grid>
+          </Grid>
+        )}
+      </Spring>
     </div>
   );
 }
