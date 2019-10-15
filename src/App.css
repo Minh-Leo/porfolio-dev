@@ -74,3 +74,14 @@ nav {
 .profileContainer h3 {
   flex-basis: 1;
 }
+
+@media (max-width: 600px) {
+  .image {
+    height: 25px;
+    padding: 0px;
+  }
+  .nav-links a {
+    font-size: 14px;
+    margin: 0 10px 0 0px;
+  }
+}

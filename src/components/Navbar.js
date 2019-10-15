@@ -10,7 +10,7 @@ function Navbar() {
       </div>
       <div
         style={{
-          width: "30vw",
+          width: "20vw",
           borderBottom: "1px solid #393939"
         }}
       />

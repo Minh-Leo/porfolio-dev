@@ -11,6 +11,9 @@ import Typography from "@material-ui/core/Typography";
 const styles = makeStyles({
   card: {
     maxWidth: 825,
+    "@media (max-width: 1104px)": {
+      maxWidth: 400
+    },
     minWidth: 350,
     height: 330,
     backgroundColor: "#FFFFFF",

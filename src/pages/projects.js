@@ -72,7 +72,28 @@ function Projects(props) {
                       sec='300'
                     />
                   </Grid>
-                  <Grid item md={8}>
+                  {window.screen.width >= 1104 ? (
+                    <Grid item md={8}>
+                      <CardPorfoLong
+                        image={web5}
+                        title='Travelusts'
+                        body='Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Maked with HTML - CSS - SASS - Javascript.'
+                        url='https://minh-leo.github.io/Travelusts/'
+                        git='https://github.com/Minh-Leo/Travelusts'
+                      />
+                    </Grid>
+                  ) : (
+                    <Grid item md>
+                      <CardPorfoLong
+                        image={web5}
+                        title='Travelusts'
+                        body='Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Maked with HTML - CSS - SASS - Javascript.'
+                        url='https://minh-leo.github.io/Travelusts/'
+                        git='https://github.com/Minh-Leo/Travelusts'
+                      />
+                    </Grid>
+                  )}
+                  {/* <Grid item md={8}>
                     <CardPorfoLong
                       image={web5}
                       title='Travelusts'
@@ -80,7 +101,7 @@ function Projects(props) {
                       url='https://minh-leo.github.io/Travelusts/'
                       git='https://github.com/Minh-Leo/Travelusts'
                     />
-                  </Grid>
+                  </Grid> */}
                 </Grid>
                 <Grid container spacing={2}>
                   <Grid item md>
