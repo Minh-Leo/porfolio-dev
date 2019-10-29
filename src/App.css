@@ -75,6 +75,11 @@ nav {
   flex-basis: 1;
 }
 
+.aboutContainer {
+  color: red;
+  background-color: red;
+}
+
 @media (max-width: 600px) {
   .image {
     height: 25px;

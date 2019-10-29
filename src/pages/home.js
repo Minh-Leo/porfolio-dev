@@ -8,7 +8,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 
 import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
+// import InstagramIcon from "@material-ui/icons/Instagram";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
 import CameraIcon from "@material-ui/icons/Camera";
@@ -44,7 +44,9 @@ function Home(props) {
               </li>
               <li>
                 <EmailIcon color='primary' fontSize='default' />
-                <a>tranduyminh.bui@gmail.com</a>
+                <a href='mailto:tranduyminh.bui@gmail.com'>
+                  tranduyminh.bui@gmail.com
+                </a>
               </li>
 
               <li>
@@ -59,7 +61,7 @@ function Home(props) {
               </li>
               <li>
                 <PhoneAndroidIcon color='primary' fontSize='default' />{" "}
-                <a>0490 - 397 - 335</a>
+                <a href='#'>0490 - 397 - 335</a>
               </li>
             </ul>
           </div>{" "}

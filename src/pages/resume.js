@@ -21,6 +21,13 @@ function Resume() {
               >
                 tranduyminh.bui@gmail.com
               </a>
+              Portfolio:{" "}
+              <a
+                className={styles.email}
+                href='https://minhbui-porfolio-dev.netlify.com/'
+              >
+                https://minhbui-porfolio-dev.netlify.com/
+              </a>
             </p>
           </div>
 
