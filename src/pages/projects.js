@@ -142,16 +142,28 @@ function Projects(props) {
       ) : (
         <>
           <Grid container spacing={2}>
-            <Grid item xs={8}>
-              <CardPorfoLong
-                image={react4}
-                title='Social Ape'
-                body='An attempt of cloning Twitter, with features including signup for new users by email - login for existed users - post/delete/comment/like/unlike messages - receive notifications on recent activities '
-                url='https://social-ape-0007.netlify.com/'
-                git='https://github.com/Minh-Leo/social-ape'
-              />
-            </Grid>
-            <Grid item xs>
+            {window.screen.width >= 1104 ? (
+              <Grid item md={8}>
+                <CardPorfoLong
+                  image={react4}
+                  title='Social Ape'
+                  body='An attempt of cloning Twitter, with features including signup for new users by email - login for existed users - post/delete/comment/like/unlike messages - receive notifications on recent activities '
+                  url='https://social-ape-0007.netlify.com/'
+                  git='https://github.com/Minh-Leo/social-ape'
+                />
+              </Grid>
+            ) : (
+              <Grid item md>
+                <CardPorfoLong
+                  image={react4}
+                  title='Social Ape'
+                  body='An attempt of cloning Twitter, with features including signup for new users by email - login for existed users - post/delete/comment/like/unlike messages - receive notifications on recent activities '
+                  url='https://social-ape-0007.netlify.com/'
+                  git='https://github.com/Minh-Leo/social-ape'
+                />
+              </Grid>
+            )}
+            <Grid item md>
               <CardPorfo
                 image={react1}
                 title='React Movie Database'
@@ -162,8 +174,9 @@ function Projects(props) {
               />
             </Grid>
           </Grid>
+
           <Grid container spacing={2}>
-            <Grid item xs>
+            <Grid item md>
               <CardPorfo
                 image={react2}
                 title='Hotel Rooms Booking app'
@@ -173,7 +186,7 @@ function Projects(props) {
                 sec='600'
               />
             </Grid>
-            <Grid item xs>
+            <Grid item md>
               <CardPorfo
                 image={react3}
                 title='Mobile Phone e-Commerce'
@@ -183,7 +196,7 @@ function Projects(props) {
                 sec='900'
               />
             </Grid>
-            <Grid item xs>
+            <Grid item md>
               <CardPorfo
                 image={react5}
                 title='Github User Data Finder'

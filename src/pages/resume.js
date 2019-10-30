@@ -21,6 +21,7 @@ function Resume() {
               >
                 tranduyminh.bui@gmail.com
               </a>
+              <br />
               Portfolio:{" "}
               <a
                 className={styles.email}
