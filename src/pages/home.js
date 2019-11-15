@@ -1,7 +1,7 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import {Spring} from "react-spring/renderprops";
-import profile2 from "../images/profile2.jpg";
+import { Link } from "react-router-dom";
+import { Spring } from "react-spring/renderprops";
+import profile from "../images/profile.jpg";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
@@ -19,49 +19,49 @@ const styles = theme => ({
 });
 
 function Home(props) {
-  const {classes} = props;
+  const { classes } = props;
 
   return (
     <div className={classes.containerPage}>
       <Grid container>
         <Grid item md>
-          <div className='profileContainer'>
+          <div className="profileContainer">
             <img
               className={classes.image}
-              src={profile2}
-              alt='profile Minh Bui'
+              src={profile}
+              alt="profile Minh Bui"
             />
             <ul>
               <li>
-                <FacebookIcon color='primary' fontSize='default' />
+                <FacebookIcon color="primary" fontSize="default" />
                 <a
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  href='https://www.facebook.com/Nekoroden'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/Nekoroden"
                 >
                   https://www.facebook.com/Nekoroden
                 </a>
               </li>
               <li>
-                <EmailIcon color='primary' fontSize='default' />
-                <a href='mailto:tranduyminh.bui@gmail.com'>
+                <EmailIcon color="primary" fontSize="default" />
+                <a href="mailto:tranduyminh.bui@gmail.com">
                   tranduyminh.bui@gmail.com
                 </a>
               </li>
 
               <li>
-                <CameraIcon color='primary' fontSize='default' />
+                <CameraIcon color="primary" fontSize="default" />
                 <a
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  href='https://tranduyminhbui.wixsite.com/porfolio'
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://tranduyminhbui.wixsite.com/porfolio"
                 >
                   https://tranduyminhbui.wixsite.com/porfolio
                 </a>
               </li>
               <li>
-                <PhoneAndroidIcon color='primary' fontSize='default' />{" "}
-                <a href='#'>0490 - 397 - 335</a>
+                <PhoneAndroidIcon color="primary" fontSize="default" />{" "}
+                <a href="#">0490 - 397 - 335</a>
               </li>
             </ul>
           </div>{" "}
@@ -69,9 +69,9 @@ function Home(props) {
       </Grid>
 
       <Spring
-        from={{opacity: 0, marginTop: 50}}
-        to={{opacity: 1, marginTop: 0}}
-        config={{duration: 500}}
+        from={{ opacity: 0, marginTop: 50 }}
+        to={{ opacity: 1, marginTop: 0 }}
+        config={{ duration: 500 }}
       >
         {props => (
           <Grid container style={props}>
@@ -94,11 +94,11 @@ function Home(props) {
                   as photography and videography. So let's get in touch and talk
                   more about your next web project!
                 </p>
-                <Link to='/projects'>
+                <Link to="/projects">
                   <AppsIcon
                     className={classes.appIcon}
-                    color='primary'
-                    fontSize='large'
+                    color="primary"
+                    fontSize="large"
                   />{" "}
                 </Link>
               </Paper>{" "}
