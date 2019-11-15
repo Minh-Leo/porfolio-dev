@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Spring } from "react-spring/renderprops";
-import profile from "../images/profile.jpg";
+import profile2 from "../images/profile2.jpg";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
@@ -28,7 +28,7 @@ function Home(props) {
           <div className="profileContainer">
             <img
               className={classes.image}
-              src={profile}
+              src={profile2}
               alt="profile Minh Bui"
             />
             <ul>
