@@ -78,7 +78,7 @@ function Projects(props) {
                         image={web5}
                         title="Travelusts"
                         body="Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Maked with HTML - CSS - SASS - Javascript."
-                        url="https://minh-leo.github.io/Travelusts/"
+                        url="http://thetravelusts.me/"
                         git="https://github.com/Minh-Leo/Travelusts"
                       />
                     </Grid>
