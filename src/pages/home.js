@@ -61,7 +61,9 @@ function Home(props) {
               </li>
               <li>
                 <PhoneAndroidIcon color="primary" fontSize="default" />{" "}
-                <a href="#">0490 - 397 - 335</a>
+                <a href="https://minhbui-porfolio-dev.netlify.com/">
+                  0490 - 397 - 335
+                </a>
               </li>
             </ul>
           </div>{" "}
