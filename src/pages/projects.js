@@ -12,7 +12,7 @@ import react1 from "../images/porforeact1-thumb.png";
 import react2 from "../images/porforeact2-thumb.png";
 import react3 from "../images/porforeact3-thumb.png";
 import react4 from "../images/porforeact4-thumb.png";
-import react5 from "../images/porforeact5-thumb.png";
+import react6 from "../images/porforeact6-thumb.png";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
@@ -93,15 +93,6 @@ function Projects(props) {
                       />
                     </Grid>
                   )}
-                  {/* <Grid item md={8}>
-                    <CardPorfoLong
-                      image={web5}
-                      title='Travelusts'
-                      body='Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Maked with HTML - CSS - SASS - Javascript.'
-                      url='https://minh-leo.github.io/Travelusts/'
-                      git='https://github.com/Minh-Leo/Travelusts'
-                    />
-                  </Grid> */}
                 </Grid>
                 <Grid container spacing={2}>
                   <Grid item md>
@@ -157,7 +148,7 @@ function Projects(props) {
                 <CardPorfoLong
                   image={react4}
                   title="Social Ape"
-                  body="An attempt of cloning Twitter, with features including signup for new users by email - login for existed users - post/delete/comment/like/unlike messages - receive notifications on recent activities "
+                  body="An attempt of cloning Twitter, with features including signup for new users by email - login for existed users - post/delete/comment/like/unlike messages - receive notifications on recent activities."
                   url="https://social-ape-0007.netlify.com/"
                   git="https://github.com/Minh-Leo/social-ape"
                 />
@@ -198,11 +189,11 @@ function Projects(props) {
             </Grid>
             <Grid item md>
               <CardPorfo
-                image={react5}
-                title="Github User Data Finder"
-                body="Web app for searching and displaying information on github users and their repositories"
-                url="https://githubfinder-0002.netlify.com/"
-                git="https://github.com/Minh-Leo/github-search"
+                image={react6}
+                title="CRWN Clothings app"
+                body="Web app for e-commerce business, features including shopping cart, users authentication and check-out payment"
+                url="https://minhbui-crwn-clothings.herokuapp.com/"
+                git="https://github.com/Minh-Leo/clothings-ecommerce"
                 sec="1200"
               />
             </Grid>
