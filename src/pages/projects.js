@@ -191,7 +191,7 @@ function Projects(props) {
               <CardPorfo
                 image={react6}
                 title="CRWN Clothings app"
-                body="Web app for e-commerce business, features including shopping cart, users authentication and check-out payment"
+                body="E-commerce business app with features including shopping cart, users authentication and check-out payment"
                 url="https://minhbui-crwn-clothings.herokuapp.com/"
                 git="https://github.com/Minh-Leo/clothings-ecommerce"
                 sec="1200"
