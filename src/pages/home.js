@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Spring } from "react-spring/renderprops";
-import profile2 from "../images/profile2.jpg";
+import profile3 from "../images/profile3.jpg";
 
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
 // import InstagramIcon from "@material-ui/icons/Instagram";
 import EmailIcon from "@material-ui/icons/Email";
@@ -28,10 +29,20 @@ function Home(props) {
           <div className="profileContainer">
             <img
               className={classes.image}
-              src={profile2}
+              src={profile3}
               alt="profile Minh Bui"
             />
             <ul>
+              <li>
+                <LinkedInIcon color="primary" fontSize="default" />
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.linkedin.com/in/minh-bui-6b9458188/"
+                >
+                  https://www.linkedin.com/in/minh-bui-6b9458188/
+                </a>
+              </li>
               <li>
                 <FacebookIcon color="primary" fontSize="default" />
                 <a
@@ -87,8 +98,9 @@ function Home(props) {
                   focused on crafting clean & user‑friendly experiences. On the
                   next page you can see some projects I've been working on
                   lately, they are mainly built with HTML - CSS - Javascript -
-                  ReactJS with Redux and Context API on the Front-end, then
-                  MongooseDB, Firebase, ExpressJS and NodeJS on the Back-end.
+                  ReactJS with Redux and Context API on the Front-end, then Ruby
+                  on Rails, PostgreSQL, MongooseDB, Firebase, ExpressJS and
+                  NodeJS on the Back-end.
                   <br />
                   <br /> I'm interested in all kinds of visual communication,
                   but my major focus is on designing and developing web, mobile

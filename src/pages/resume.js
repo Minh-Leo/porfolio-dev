@@ -1,14 +1,18 @@
 import React from "react";
-import {Spring} from "react-spring/renderprops";
+import { Spring } from "react-spring/renderprops";
 import styles from "./resume.module.css";
 import Img from "../images/profile.jpg";
 
 function Resume() {
   return (
-    <Spring from={{opacity: 0}} to={{opacity: 1}} config={{duration: 500}}>
+    <Spring
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+      config={{ duration: 500 }}
+    >
       {props => (
         <div className={styles.pageWrap} style={props}>
-          <img src={Img} alt='profile' className={styles.pic} />
+          <img src={Img} alt="profile" className={styles.pic} />
           <div>
             <h1>. Minh Bui .</h1>
             <p>
@@ -17,7 +21,7 @@ function Resume() {
               Email:{" "}
               <a
                 className={styles.email}
-                href='mailto:tranduyminh.bui@gmail.com'
+                href="mailto:tranduyminh.bui@gmail.com"
               >
                 tranduyminh.bui@gmail.com
               </a>
@@ -25,7 +29,7 @@ function Resume() {
               Portfolio:{" "}
               <a
                 className={styles.email}
-                href='https://minhbui-porfolio-dev.netlify.com/'
+                href="https://minhbui-porfolio-dev.netlify.com/"
               >
                 https://minhbui-porfolio-dev.netlify.com/
               </a>
@@ -46,6 +50,12 @@ function Resume() {
           <dl>
             <dd className={styles.clear}></dd>
             <dt className={styles.edu}>Education</dt>
+            <dd>
+              <h2>Le Wagon Coding Bootcamp - Melbourne</h2>
+              <p>
+                <strong>Fullstack Web Developer intensive course</strong>
+              </p>
+            </dd>
             <dd>
               <h2>University Of Technology - Sydney</h2>
               <p>
@@ -76,17 +86,24 @@ function Resume() {
               <h2>Front-end & Web Application</h2>
               <ul>
                 <li>M.E.R.N stack: MongoDB - ExpressJS - ReactJS - NodeJS</li>
-                <li>HTML 5, CSS 3, SASS, Javascript, Bootstrap, JQuery</li>
                 <li>
-                  Git, Redux, Firebase, AuthO, Netlify, Heroku, Material-UI
+                  HTML 5, CSS 3, SASS, Javascript, Ruby, Ruby on Rails,
+                  PostgreSQL, mySQL, Bootstrap, JQuery
+                </li>
+                <li>
+                  Git, Testing, Redux, Firebase, AuthO, Netlify, Heroku,
+                  Material-UI
                 </li>
               </ul>
             </dd>
             <dd>
-              <h2>Design skills</h2>
+              <h2>Graphic Design and UI skills</h2>
               <ul>
                 <li>
                   Adobe Suite: Photoshop, Lightroom, Premiere Pro, Illustrator
+                </li>
+                <li>
+                  UI Design and prototyping tools such as Figma and Adobe XD
                 </li>
                 <li>Videography & Photography skills</li>
               </ul>

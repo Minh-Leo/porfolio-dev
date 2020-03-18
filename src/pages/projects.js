@@ -6,7 +6,7 @@ import CardPorfoLong from "../components/CardLong";
 import web1 from "../images/porfoweb1-thumb.png";
 import web2 from "../images/porfoweb2-thumb.png";
 import web3 from "../images/porfoweb3-thumb.png";
-import web4 from "../images/porfoweb4-thumb.png";
+import web6 from "../images/porfoweb6-thumb.png";
 import web5 from "../images/porfoweb5-thumb.png";
 import react1 from "../images/porforeact1-thumb.png";
 import react2 from "../images/porforeact2-thumb.png";
@@ -66,7 +66,7 @@ function Projects(props) {
                     <CardPorfo
                       image={web3}
                       title="Outdoor Tours Agency"
-                      body="Website layout for outdoor tours and travel service. Maked with HTML - CSS - SASS - Javascript"
+                      body="Website layout for outdoor tours and travel service. Made with HTML - CSS - SASS - Javascript and NodeJs"
                       url="https://minh-leo.github.io/Webs/outdoor-tours"
                       git="https://github.com/Minh-Leo/Webs/tree/master/outdoor-tours"
                       sec="300"
@@ -77,7 +77,7 @@ function Projects(props) {
                       <CardPorfoLong
                         image={web5}
                         title="Travelusts"
-                        body="Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Maked with HTML - CSS - SASS - Javascript."
+                        body="Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Made with HTML - CSS - SASS - Javascript."
                         url="http://thetravelusts.me/"
                         git="https://github.com/Minh-Leo/Travelusts"
                       />
@@ -87,7 +87,7 @@ function Projects(props) {
                       <CardPorfoLong
                         image={web5}
                         title="Travelusts"
-                        body="Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Maked with HTML - CSS - SASS - Javascript."
+                        body="Personnal travel blog that focus on showcasing images and travel-related articles with a photo gallery in masonry-grid style. Made with HTML - CSS - SASS - Javascript."
                         url="https://minh-leo.github.io/Travelusts/"
                         git="https://github.com/Minh-Leo/Travelusts"
                       />
@@ -99,7 +99,7 @@ function Projects(props) {
                     <CardPorfo
                       image={web1}
                       title="Pont des Arts"
-                      body="Website for a wedding photography business. Maked with HTML - CSS - SASS - Javascript."
+                      body="Website for a wedding photography business. Made with HTML - CSS - SASS - Javascript."
                       url="https://minh-leo.github.io/Webs/PontArts"
                       git="https://github.com/Minh-Leo/Webs/tree/master/PontArts"
                       sec="600"
@@ -109,7 +109,7 @@ function Projects(props) {
                     <CardPorfo
                       image={web2}
                       title="Nexter Agency"
-                      body="Website layout for real estate agency. Maked with HTML - CSS - SASS."
+                      body="Website layout for real estate agency. Made with HTML - CSS - SASS."
                       url="https://minh-leo.github.io/Webs/estate-agent"
                       git="https://github.com/Minh-Leo/Webs/tree/master/estate-agent"
                       sec="900"
@@ -117,11 +117,11 @@ function Projects(props) {
                   </Grid>
                   <Grid item md>
                     <CardPorfo
-                      image={web4}
-                      title="Comfy Home Furniture"
-                      body="An e-commerce sample site with shopping cart functionality, Maked with pure Javascript - HTML - CSS"
-                      url="https://minh-leo.github.io/Webs/comfyHome"
-                      git="https://github.com/Minh-Leo/Webs/tree/master/comfyHome"
+                      image={web6}
+                      title="Vestigium"
+                      body="Reading and categorizing News based on their sentiments and location, Made with Ruby on Rails and Javascript"
+                      url="http://www.vestigium.world/"
+                      git="https://github.com/Minh-Leo/vestigium"
                       sec="1200"
                     />
                   </Grid>
