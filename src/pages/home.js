@@ -38,9 +38,9 @@ function Home(props) {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/minh-bui-6b9458188/"
+                  href="https://www.linkedin.com/in/minh-bui-developer/"
                 >
-                  https://www.linkedin.com/in/minh-bui-6b9458188/
+                  https://www.linkedin.com/in/minh-bui-developer
                 </a>
               </li>
               <li>
