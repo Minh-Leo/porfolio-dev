@@ -35,7 +35,7 @@ nav {
   align-items: center;
 }
 .nav-links a {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 600;
   text-decoration: none;
   color: #393939;
@@ -81,6 +81,9 @@ nav {
 }
 
 @media (max-width: 600px) {
+  .profileContainer {
+    flex-direction: column;
+  }
   .image {
     height: 25px;
     padding: 0px;

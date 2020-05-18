@@ -10,8 +10,8 @@ function Resume() {
       to={{ opacity: 1 }}
       config={{ duration: 500 }}
     >
-      {(props) => (
-        <div className={styles.pageWrap} style={props}>
+      {() => (
+        <div className={styles.pageWrap}>
           <img src={Img} alt='profile' className={styles.pic} />
           <div>
             <h1>. Minh Bui .</h1>
@@ -53,13 +53,13 @@ function Resume() {
             <dd>
               <h2>Le Wagon Coding Bootcamp - Melbourne</h2>
               <p>
-                <strong>Fullstack Web Developer intensive course</strong>
+                <strong>- Fullstack Web Developer intensive course</strong>
               </p>
             </dd>
             <dd>
               <h2>University Of Technology - Sydney</h2>
               <p>
-                <strong>Master:</strong> Professional Accounting
+                <strong>- Master:</strong> Professional Accounting
                 {/* <br />
             <strong>Minor:</strong> Finance */}
               </p>
@@ -67,14 +67,14 @@ function Resume() {
             <dd>
               <h2>University Sophia Antipolis - Nice</h2>
               <p>
-                <strong>Bachelor:</strong> Science of Information -
+                <strong>- Bachelor:</strong> Science of Information -
                 Communication
               </p>
             </dd>
             <dd>
               <h2>ARENA Academy - Ho Chi Minh city</h2>
               <p>
-                <strong>Advanced Diploma:</strong> Multimedia Technology -
+                <strong>- Advanced Diploma:</strong> Multimedia Technology -
                 Website Development
               </p>
             </dd>
@@ -129,7 +129,7 @@ function Resume() {
                   Led development of a Ruby on Rails application for filtering
                   Breaking News using Language Processing tech and ThreeJS
                 </li>
-                <li>Delivered an AirBnBƸstyle site for online marketplace</li>
+                <li>Delivered an AirBnB-style site for online marketplace</li>
                 <li>Developed promotional contents for businesses</li>
               </ul>
 
