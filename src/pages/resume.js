@@ -1,7 +1,7 @@
-import React from "react";
-import { Spring } from "react-spring/renderprops";
-import styles from "./resume.module.css";
-import Img from "../images/profile.jpg";
+import React from 'react';
+import { Spring } from 'react-spring/renderprops';
+import styles from './resume.module.css';
+import Img from '../images/profile.jpg';
 
 function Resume() {
   return (
@@ -10,28 +10,28 @@ function Resume() {
       to={{ opacity: 1 }}
       config={{ duration: 500 }}
     >
-      {props => (
+      {(props) => (
         <div className={styles.pageWrap} style={props}>
-          <img src={Img} alt="profile" className={styles.pic} />
+          <img src={Img} alt='profile' className={styles.pic} />
           <div>
             <h1>. Minh Bui .</h1>
             <p>
               Mobile: <span>0490-397-335</span>
               <br />
-              Email:{" "}
+              Email:{' '}
               <a
                 className={styles.email}
-                href="mailto:tranduyminh.bui@gmail.com"
+                href='mailto:tranduyminh.bui@gmail.com'
               >
                 tranduyminh.bui@gmail.com
               </a>
               <br />
-              Portfolio:{" "}
+              Portfolio:{' '}
               <a
                 className={styles.email}
-                href="https://minhbui-porfolio-dev.netlify.com/"
+                href='https://minhbui-porfolio-dev.netlify.app/'
               >
-                https://minhbui-porfolio-dev.netlify.com/
+                https://minhbui-porfolio-dev.netlify.app/
               </a>
             </p>
           </div>
@@ -114,28 +114,34 @@ function Resume() {
             <dt className={styles.exp}>Experience</dt>
             <dd>
               <h2>
-                Freelance{" "}
-                <span>Minh Bui Studio - Sydney/Dubbo/Adelaide - 2014-2019</span>
+                Freelance Developer{' '}
+                <span>Minh Bui Studio - Sydney/Adelaide - 2018-present</span>
               </h2>
               <ul>
                 <li>
-                  In charge of producing weekly photos and videos of various
-                  events from local companies, night clubs and media agencies
+                  Successfully delivered 4 websites in professional and timely
+                  manner
                 </li>
                 <li>
-                  Developed static websites as well as many side projects on
-                  ReactJS
+                  3 finished web applications using M.E.R.N stack and counting
                 </li>
-                <li>Designed food & drink menu for coffee shop</li>
+                <li>
+                  Led development of a Ruby on Rails application for filtering
+                  Breaking News using Language Processing tech and ThreeJS
+                </li>
+                <li>Delivered an AirBnBƸstyle site for online marketplace</li>
+                <li>Developed promotional contents for businesses</li>
               </ul>
 
               <h2>
-                TEDx University of South Australia{" "}
-                <span>Team member - Adelaide - 2019</span>
+                TEDx University of South Australia{' '}
+                <span>Team visual marketing - Adelaide - 2019</span>
               </h2>
               <ul>
                 <li>Worked on promotional campaigns</li>
-                <li>Produced main events photos of speakers and guests</li>
+                <li>
+                  Produced visual contents of the event for speakers and guests
+                </li>
               </ul>
             </dd>
 
@@ -146,7 +152,7 @@ function Resume() {
               <ul>
                 <li>Travelling, Musics: Jazz, Ballad & Swing, Piano</li>
                 <li>Street Photography, Coding, New Technologies</li>
-              </ul>{" "}
+              </ul>{' '}
             </dd>
 
             <dd className={styles.clear}></dd>
