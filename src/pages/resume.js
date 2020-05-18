@@ -87,12 +87,12 @@ function Resume() {
               <ul>
                 <li>M.E.R.N stack: MongoDB - ExpressJS - ReactJS - NodeJS</li>
                 <li>
-                  HTML 5, CSS 3, SASS, Javascript, Ruby, Ruby on Rails,
+                  HTML 5, CSS 3, SASS, Javascript, Redux, Ruby, Ruby on Rails,
                   PostgreSQL, mySQL, Bootstrap, JQuery
                 </li>
                 <li>
-                  Git, Testing, Redux, Firebase, AuthO, Netlify, Heroku,
-                  Material-UI
+                  Git, Testing, Zest, Enzyme, Mocha, Firebase, MongoDB, AuthO,
+                  Netlify, Heroku, Material-UI, Semantic-UI
                 </li>
               </ul>
             </dd>
