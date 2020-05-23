@@ -14,7 +14,7 @@ function Resume() {
         <div className={styles.pageWrap}>
           <iframe
             title='resume'
-            src='https://drive.google.com/file/d/1zpyjXQedW_VCbf7kYHNm2AXF6cT2bwJT/preview'
+            src='https://drive.google.com/file/d/1PQVRU8kY_YZmErC7Y6ubAh2eLFt_VQxo/preview'
             width='100%'
             height='800'
           ></iframe>
